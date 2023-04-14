@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[environment type  null]]>
+    </line>
+    <line>
+      <![CDATA[in dev environment]]>
+    </line>
+    <line>
+      <![CDATA[environment type  null]]>
+    </line>
+    <line>
+      <![CDATA[payload <?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+<soap:Body>
+<Multiply xmlns="http://tempuri.org/">
+<intA>500</intA>
+<intB>200</intB>
+</Multiply>
+</soap:Body>
+</soap:Envelope> ]]>
+    </line>
+    <line>
+      <![CDATA[property value for calculator:http://www.dneonline.com/calculator.asmx]]>
+    </line>
+    <line>
+      <![CDATA[property value for Content-Type:text/xml; charset=utf-8]]>
+    </line>
+    <line>
+      <![CDATA[Response Code : 200]]>
+    </line>
+    <line>
+      <![CDATA[recent services <?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><soap:Body><MultiplyResponse xmlns="http://tempuri.org/"><MultiplyResult>100000</MultiplyResult></MultiplyResponse></soap:Body></soap:Envelope>]]>
+    </line>
+    <line>
+      <![CDATA[Http code is   200]]>
+    </line>
+    <line>
+      <![CDATA[response payload is   <?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><soap:Body><MultiplyResponse xmlns="http://tempuri.org/"><MultiplyResult>100000</MultiplyResult></MultiplyResponse></soap:Body></soap:Envelope>]]>
+    </line>
+    <line>
+      <![CDATA[payload <?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <NumberToWords xmlns="http://www.dataaccess.com/webservicesserver/">
+      <ubiNum>500</ubiNum>
+    </NumberToWords>
+  </soap:Body>
+</soap:Envelope> ]]>
+    </line>
+    <line>
+      <![CDATA[property value for numberConversion:https://www.dataaccess.com/webservicesserver/NumberConversion.wso]]>
+    </line>
+    <line>
+      <![CDATA[property value for Content-Type:text/xml; charset=utf-8]]>
+    </line>
+    <line>
+      <![CDATA[Response Code : 200]]>
+    </line>
+    <line>
+      <![CDATA[recent services <?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <m:NumberToWordsResponse xmlns:m="http://www.dataaccess.com/webservicesserver/">
+      <m:NumberToWordsResult>five hundred </m:NumberToWordsResult>
+    </m:NumberToWordsResponse>
+  </soap:Body>
+</soap:Envelope>]]>
+    </line>
+    <line>
+      <![CDATA[Http code is   200]]>
+    </line>
+    <line>
+      <![CDATA[response payload is   <?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <m:NumberToWordsResponse xmlns:m="http://www.dataaccess.com/webservicesserver/">
+      <m:NumberToWordsResult>five hundred </m:NumberToWordsResult>
+    </m:NumberToWordsResponse>
+  </soap:Body>
+</soap:Envelope>]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2023-04-11T13:42:58Z" name="Default suite" finished-at="2023-04-11T13:42:58Z" duration-ms="660">
+    <groups>
+      <group name="1">
+        <method signature="com.api.automation.apidemoproject.SoapTest.numberConversion()" name="numberConversion" class="com.api.automation.apidemoproject.SoapTest"/>
+      </group>
+      <group name="2">
+        <method signature="com.api.automation.apidemoproject.SoapTest.calculator_Multiplication()" name="calculator_Multiplication" class="com.api.automation.apidemoproject.SoapTest"/>
+      </group>
+      <group name="smoke">
+        <method signature="com.api.automation.apidemoproject.SoapTest.calculator_Multiplication()" name="calculator_Multiplication" class="com.api.automation.apidemoproject.SoapTest"/>
+        <method signature="com.api.automation.apidemoproject.SoapTest.numberConversion()" name="numberConversion" class="com.api.automation.apidemoproject.SoapTest"/>
+      </group>
+    </groups>
+    <test started-at="2023-04-11T13:42:58Z" name="Default test" finished-at="2023-04-11T13:42:58Z" duration-ms="660">
+      <class name="com.api.automation.apidemoproject.SoapTest">
+        <test-method signature="calculator_Multiplication()" started-at="2023-04-11T13:42:58Z" name="calculator_Multiplication" description="Sample  call" finished-at="2023-04-11T13:42:58Z" duration-ms="406" status="PASS">
+        </test-method>
+        <test-method signature="numberConversion()" started-at="2023-04-11T13:42:58Z" name="numberConversion" description="Sample PUT call" finished-at="2023-04-11T13:42:58Z" duration-ms="243" status="PASS">
+        </test-method>
+      </class>
+    </test>
+  </suite>
+</testng-results>
